@@ -3,7 +3,7 @@
 /**
  *main - prints the decimal numbers 0-9
  *
- *Return: function doesnt have a return value
+ *Return: function returns 0 when sucessful
  */
 int main(void)
 {
@@ -11,5 +11,6 @@ int main(void)
 	
 	for (i = 0; i < 10; i++)
 		printf("%d", i);
-	printf("\n");			
+	printf("\n");
+	return (0);
 }
