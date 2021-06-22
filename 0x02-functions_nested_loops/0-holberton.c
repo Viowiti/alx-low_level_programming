@@ -1,13 +1,14 @@
-#include <stdio.h>
+#include <unistd.h>
 #include <holberton.h>
 /**
- *main - prints out a string
+ *_putchar - writes the character c to stdout
  *
- *Return: 0 when compiled sucessfully.
+ *Return: On success 1
+ *On error, -1 is returned and errno is set appropriately.
  */
 
-int main(void)
+int _putchar(char c)
 {
-	_putchar("Holberton");
-	return (0);
+	c = "Holberton";
+	return (write(1,&c,1));
 }
