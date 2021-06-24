@@ -1,13 +1,13 @@
-#include <unistd.h>
 #include "holberton.h"
+
 /**
- * _isupper - checks whether the value of c is an uppercase letter
- * @c: The character being tested
- *
- * Return: On success 0
- * On error,  is returned, and errno is set appropriately.
- */
-int _isupper(int c);
+* _isupper - checks uppercase letters
+* @c: takes character in ASCII
+*
+* Return: 0 or 1
+*/
+
+int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);
