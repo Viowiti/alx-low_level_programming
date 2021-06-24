@@ -3,7 +3,6 @@
 /**
 * print_diagonal - prints diagonals
 * @n: limit
-*
 * Return: void
 */
 
