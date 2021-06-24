@@ -1,20 +1,18 @@
-#inclde "holberton.h"
+#include "holberton.h"
 
 /**
- * print_most_numbers - print all numbers base 10
- *
- *Return: no return value
+ * print_most_numbers - prints numbers between 0 to 9
+ * (neither 2 nor 4).
+ * Return: no return.
  */
 void print_most_numbers(void)
 {
-	int i;
+	int h;
 
-	for (i = 48; i < 58; i++)
+	for (h = 48; h < 58; h++)
 	{
-		if (i != 50 && i != 52)
-		{
-			_putchar(i);
-		}
+		if (h != 50 && h != 52)
+			_putchar(h);
 	}
 	_putchar('\n');
 }
