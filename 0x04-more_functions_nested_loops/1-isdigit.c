@@ -1,10 +1,9 @@
-#include "holberton.h>
+#include "holberton.h"
 
 /**
 *_isdigit - checks if c is a decimal number
 *@c: The character being checked
-*Return: On success 1.
-*On error, 0 is returned, and errno is set appropriately.
+*Return: 1 if the value in c is a decimal number. 0 otherwise.
 */
 
 int _isdigit(int c)
