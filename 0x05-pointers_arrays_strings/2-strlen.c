@@ -19,9 +19,10 @@ int _strlen(char *s)
  */
 int _strlen(char *s)
 {
-	s = "";
-	int j = 0;
-	while (s[j] != '\0')
-		j++;
-	return (j - 1);
+	int j;
+
+	j=0;
+	s[j] = "";
+	for (; j != '\0'; j++)
+		return (j + 1);
 }
