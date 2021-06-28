@@ -1,17 +1,22 @@
 #include <unistd.h>
 #include "holberton.h"
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _strlen - checks the length of a string
+ * @s: character pointer
  *
- * Return: On success 1.
+ * Return: length of a string
  * On error, -1 is returned, and errno is set appropriately.
  */
 
 int _strlen(char *s)
 {
-	char str, int len;
+	char str;
 
-	s = &str;
-	len = _strlen(str) + 1;
+	int len;
+
+	*s = str;
+	len = _strlen(str);
+	len = len + 1;
+
+	return (len);
 }
