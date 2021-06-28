@@ -1,13 +1,21 @@
-#include <unistd.h>
 #include "holberton.h"
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
+#include <stdio.h>
 
+/**
+ * print_array - prints n elements of an array of integers.
+ * @a: input array.
+ * @n: input n elements
+ * Return: no return.
+ */
 void print_array(int *a, int n)
 {
-	for (
+	int i = 0;
+
+	for (; i < n; i++)
+	{
+		printf("%d", *(a + i));
+		if (i != (n - 1))
+			printf(", ");
+	}
+	printf("\n");
+}
