@@ -13,6 +13,6 @@ int _strlen(char *s)
 	int j;
 
 	j=0;
-	for (; j != '\0'; j++)
+	for (; s[j] != '\0'; j++)
 		return (j);
 }
