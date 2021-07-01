@@ -2,8 +2,8 @@
 #include "holberton.h"
 /**
  * *_strcat - concatenates two strings
- * @*dest: first string
- * @*src: secont string
+ * @dest: first string
+ * @src: secont string
  * Return: a pointer to the resulting string dest.
  * On error, -1 is returned, and errno is set appropriately.
  */
