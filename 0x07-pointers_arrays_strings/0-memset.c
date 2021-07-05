@@ -1,18 +1,20 @@
-#include <unistd.h>
 #include "holberton.h"
 /**
- * _memset - fills memory with a constant byte,
- * @s: memory area.
- * @b: constant byte.
- * @n: bytes filled.
- * Return: the pointer to dest.
+ * _memset - check the code for Holberton School students.
+ * @s: parameter for the array
+ * @b: parameter for the values in the array
+ * @n: parameter for the number of times to print the new values
+ * Return: Always 0.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	unsigned int a = 0;
 
-	for (i = 0; i < n; i++)
-		*(s + i) =  b;
+	while (a < n)
+	{
+		s[a] = b;
+		a++;
+	}
 
 	return (s);
 }
