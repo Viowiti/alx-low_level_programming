@@ -4,11 +4,18 @@
  *  _puts_recursion - a function that prints a string, followed by a new line
  * @s: Pointer to a string
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: always 0
+ * On error, 1 is returned, and errno is set appropriately.
  */
 void _puts_recursion(char *s)
 {
-	_putchar(s);
-	_putchar('\n');
+	unsigned in i;
+
+	if (s[i] == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(s[i]);
+	_puts_recursion(s + 1);
 }
