@@ -12,5 +12,6 @@ int power_operation(int n, int c);
 int is_prime_number(int n);
 int helper_prime(int n, int i, int limit);
 int comparator(char *s, int n1, int n2);
+int wildcmp(char *s1, char *s2);
 
 #endif
