@@ -7,7 +7,12 @@
  * Return: no return value
  * On error, -1 is returned, and errno is set appropriately.
  */
-void _print_rev_recursion(char *s)
-{
-	unsigned int i = 0;
+void _print_{	
+	if (*s == '\0')
+	{
+		return;
+	}
+
+	_print_rev_recursion(s + 1);
+	_putchar(*s);
 }
