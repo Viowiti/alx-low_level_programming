@@ -10,11 +10,9 @@ int main(int argc, char *argv[])
 {
 	int mul, num1, num2;
 
-	char Meso[] = "Error";
-
 	if (argc != 3)
 	{
-		printf("%s\n", Meso);
+		printf("Error\n");
 		return (1);
 	}
 	else
